@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class SecondActivity extends AppCompatActivity {
 
 
     Button boton2;
-    ImageButton botonGaleria;
+    ImageView botonGaleria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class SecondActivity extends AppCompatActivity {
 
     private void SetearListners() {
         boton2.setOnClickListener(boton2_click);
-        botonGaleria.setOnClickListener(boton2_click);
+
     }
 
     View.OnClickListener boton2_click= new View.OnClickListener() {
@@ -47,7 +48,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void ObtenerReferencias(){
         boton2= (Button) findViewById(R.id.button2);
-        botonGaleria= (ImageButton) findViewById(R.id.botonGaleria);
+        botonGaleria= (ImageView) findViewById(R.id.botonGaleria);
     }
 
 
